@@ -1,0 +1,12 @@
+{
+  "name": "Ahmed Hussain — Portfolio",
+  "short_name": "Ahmed Hussain",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050d0a",
+  "theme_color": "#050d0a",
+  "icons": [
+    { "src": "/assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -5,6 +5,8 @@
 <meta name="author" content="Ahmed Hussain">
 <meta name="theme-color" content="#050d0a">
 <meta name="color-scheme" content="dark">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="manifest" href="site.webmanifest">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <!-- Social preview. If you move to a custom domain, update og:url, og:image and the canonical link. -->
@@ -175,6 +177,7 @@
  <div class="glass news">
   <div class="news-top"><span class="avail"><i></i>Live · top stories from the last 3 days</span><button class="refresh" type="button" id="news-refresh"><svg class="i"><use href="#refresh"/></svg>Refresh</button></div>
   <div id="news-list" aria-live="polite" aria-busy="true"><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div><div class="skel"></div></div>
+  <noscript><p class="noscript">Turn on JavaScript to see today's top AI stories, or read them on <a href="https://news.ycombinator.com/" target="_blank" rel="noopener">Hacker News</a>.</p></noscript>
   <p class="news-foot" id="news-foot">Loading the latest stories…</p>
  </div>
 </section>
@@ -206,7 +209,7 @@
  </nav>
 </section>
 </main>
-<footer class="fine"><span>© 2026 Ahmed Hussain</span><span>Designed and built with AI in the Bay Area.</span></footer>
+<footer class="fine"><span>© 2026 Ahmed Hussain · Built with AI in the Bay Area.</span><nav aria-label="Legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="mailto:m.ahmedhussain9@gmail.com">Contact</a></nav></footer>
 </div>
 
 <script src="script.js" defer></script>

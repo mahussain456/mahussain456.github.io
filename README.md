@@ -11,6 +11,11 @@ It's a static site with no build step and no dependencies. Open `index.html` in 
 | `index.html` | All the page content: text, links, projects, contact |
 | `styles.css` | The look: colors, fonts, liquid-glass panels, layout |
 | `script.js` | The live AI news feed, and the glass highlight that follows the mouse |
+| `privacy.html` | Privacy policy. Update it if you ever add analytics, cookies or a contact form |
+| `terms.html` | Terms of use |
+| `404.html` | The page visitors see for a broken link. Uses root paths (`/styles.css`) because GitHub Pages serves it at any address |
+| `site.webmanifest` | Name, colors and icon used when someone adds the site to their phone's home screen |
+| `sitemap.xml`, `robots.txt` | Help search engines find and index the pages |
 | `assets/` | Your photo, product logos, product screenshots, favicon and social preview image |
 | `design-history/` | The two earlier directions (A · Operator, B · Editorial), kept for reference |
 
