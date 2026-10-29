@@ -50,11 +50,17 @@ Any static host works. The fastest options:
 2. **Vercel:** run `npx vercel` in this folder, or import it from GitHub.
 3. **GitHub Pages:** push this folder to a repo, then turn on Pages in the repo settings.
 
-After you have a domain, update these in `index.html` so link previews on LinkedIn, Facebook and X show the image:
+**Live at https://mahussain456.github.io** (GitHub Pages, repo `mahussain456/mahussain456.github.io`). To update the live site, commit and push:
 
-- `og:image`: change `assets/og-image.jpg` to the full URL, e.g. `https://yourdomain.com/assets/og-image.jpg`
-- Add `<meta property="og:url" content="https://yourdomain.com/">`
-- Uncomment the `Sitemap` line in `robots.txt` and set your domain
+```bash
+git add -A && git commit -m "Update portfolio" && git push
+```
+
+If you move to a custom domain, update these in `index.html`:
+
+- `og:image`, `og:url` and the `canonical` link
+- The address in `sitemap.xml`
+- The `Sitemap` line in `robots.txt`
 
 ## Notes
 

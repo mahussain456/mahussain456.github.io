@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://mahussain456.github.io/sitemap.xml
