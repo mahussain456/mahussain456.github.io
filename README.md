@@ -70,5 +70,5 @@ If you move to a custom domain, update these in `index.html`:
 ## Notes
 
 - Email (`m.ahmedhussain9@gmail.com`) is visible in the page, so spam bots can find it. If that becomes a problem, swap the email link for a contact form.
-- The Instagram and YouTube links use `@decodedaisimplified`. Check that both open the right profiles before launch.
+- Instagram uses `@decodedaisimplified` (check it opens the right profile). YouTube is `@aidecodedoffice`.
 - Screenshots of Gem Agency and Gem Autopilot were taken from the running local apps on 29 Oct 2026. The Gem Agency shot shows project names (e.g. "Tech Support"). Retake it with demo data if any are real client names.
