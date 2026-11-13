@@ -11,6 +11,8 @@ It's a static site with no build step and no dependencies. Open `index.html` in 
 | `index.html` | All the page content: text, links, projects, contact |
 | `styles.css` | The look: colors, fonts, liquid-glass panels, layout |
 | `script.js` | The live AI news feed, and the glass highlight that follows the mouse |
+| `globe.js` | The 3D globe behind the page (WebGL, no libraries): continents as light dots, city arcs, one satellite per product. It moves between sections as you scroll |
+| `motion.js` | Page motion: project screenshots that open like laptop lids, heading reveals, the tilting portrait card, the nav highlight and progress line |
 | `privacy.html` | Privacy policy. Update it if you ever add analytics, cookies or a contact form |
 | `terms.html` | Terms of use |
 | `404.html` | The page visitors see for a broken link. Uses root paths (`/styles.css`) because GitHub Pages serves it at any address |
@@ -40,6 +42,14 @@ ffmpeg -i screenshot.png -c:v libwebp -quality 82 assets/shot-globalsync.webp
 ```html
 <a href="https://www.tiktok.com/@yourhandle" target="_blank" rel="noopener" aria-label="TikTok"><svg class="b"><use href="#tt"/></svg></a>
 ```
+
+## Motion and the 3D globe
+
+- **Where the globe sits** for each section is the `WIDE` (desktop) and `NARROW` (phone) lists in `globe.js`. Each line is: centre x, centre y, radius, tint color, brightness.
+- **Cities and arcs** are the `CITY` and `LINK` lists (latitude, longitude). City 0 is home, the Bay Area.
+- **Fallbacks:** with "reduce motion" turned on, visitors get one still frame and no scroll effects. Without WebGL, the older flat SVG globe shows instead.
+- **Map data:** the continent dots come from Natural Earth 1:110m land (public domain), baked into `globe.js` as a small bitmask. The site loads nothing extra at runtime. The script that builds the mask is kept locally in `design-history/tools/land-mask.mjs`.
+- **Preview locally:** `node .claude/serve.mjs`, then open http://127.0.0.1:5178.
 
 ## Live AI news
 

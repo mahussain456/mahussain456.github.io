@@ -24,7 +24,7 @@
       list.innerHTML = top.map((h, i) => {
         const disc = `https://news.ycombinator.com/item?id=${h.objectID}`;
         const url = h.url || disc;
-        return `<article class="story">
+        return `<article class="story" style="--i:${i}">
           <span class="rank">${i + 1}</span>
           <div><h3><a href="${esc(url)}" target="_blank" rel="noopener">${esc(h.title)}</a></h3>
           <div class="src"><span>${esc(host(url))}</span><span class="tab">${h.points} points</span><span>${ago(h.created_at_i)}</span>
